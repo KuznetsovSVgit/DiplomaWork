@@ -340,4 +340,80 @@ template {
 [hidden] {
   display: none;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+.button {
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button-main {
+  width: 164px;
+  height: 45px;
+  background-color: #8ec740;
+  border-radius: 15px;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 21px;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__phone {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #363636;
+}
+
+.header__phones {
+  max-width: 173px;
+  text-align: right;
+  vertical-align: center;
+}
+
+.header__email {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #363636;
+}
+
+.header__button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__logo {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
