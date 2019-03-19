@@ -1,0 +1,30 @@
+.recall
+  &-block 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    display: flex
+    margin-bottom: 42px
+    &:nth-child(odd)
+      margin-right: 30px
+    
+  &__card
+    max-width: 425px
+    max-height: 177px
+    background: $bgc-recall
+    border-radius: 4px
+    margin-left: 18px
+    padding: 27px
+    &:after
+      content: ''
+      width: 30px
+      height: 30px
+      transform: rotate(45deg)
+      background: red
+  &__name
+    font-size: 17px
+    font-weight: 500
+  &__text
+    font-size: 15px
+    font-weight: 300

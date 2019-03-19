@@ -374,6 +374,13 @@ body {
   padding: 40px 0px;
 }
 
+.section-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #363636;
+  text-align: center;
+}
+
 .input {
   width: 221px;
   height: 45px;
@@ -680,5 +687,55 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
+}
+
+.recall-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recall__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.recall__item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.recall__card {
+  max-width: 425px;
+  max-height: 177px;
+  background: #f2f8fa;
+  border-radius: 4px;
+  margin-left: 18px;
+  padding: 27px;
+}
+
+.recall__card:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: red;
+}
+
+.recall__name {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.recall__text {
+  font-size: 15px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
