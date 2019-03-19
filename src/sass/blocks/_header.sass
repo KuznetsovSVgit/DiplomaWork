@@ -1,30 +1,84 @@
 .header
-  padding-top: 15px
+  padding-top: 10px
   padding-bottom: 21px
   &-block
     display: flex
     justify-content: space-between
-  &__phone
-    display: inline-block
-    text-decoration: none
-    font-size: 15px
+  &__contacts
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    max-width: 373px
+    padding-top: 19px
+  &__logo
+    text-align: center
+  &__title
+    font-size: 13px
     font-weight: 300
     line-height: 24px
-    color: $text-mainColor
-    &s
-      max-width: 173px
-      text-align: right
-      vertical-align: center
-
-  &__email
+    text-transform: uppercase
+  &__headline
+    margin-top: -6px
+    margin-bottom: 7px
+  &__subtitle
+    font-size: 15px
+    font-weight: 500
+    line-height: 24px
+  &__account
+    display: flex
+    align-items: center
+  &__btn
+    font-size: 12px
+    font-weight: 500
     display: inline-block
     text-decoration: none
-    font-size: 15px
-    font-weight: 300
-    line-height: 24px
-    color: $text-mainColor
+    padding: 17px 26px
   &__button
     display: inline-block
     text-decoration: none
-  &__logo
-    text-align: center
+    outline: none
+    width: 178px
+    height: 32px
+    border: 1px solid $btn-account
+    border-radius: 5px
+    font-size: 13px
+    font-weight: 300
+    color: $btn-account
+    padding: 9px 17px
+    margin-right: 18px
+    &:hover
+      background-color: $btn-account
+      color: $btn-other
+
+.phones
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    max-width: 173px
+    margin-right: 52px
+  &__img
+    margin-right: 11px
+  &__link
+    display: inline-block
+    text-decoration: none
+    font-size: 15px
+    font-weight: 300
+    line-height: 24px
+    color: $text-mainColor
+ 
+.mail
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    max-width: 148px
+  &__img
+    margin-right: 7px
+  &__link
+    display: inline-block
+    text-decoration: none
+    font-size: 15px
+    font-weight: 300
+    line-height: 24px
+    color: $text-mainColor
