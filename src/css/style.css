@@ -712,6 +712,7 @@ body {
 }
 
 .recall__card {
+  position: relative;
   max-width: 425px;
   max-height: 177px;
   background: #f2f8fa;
@@ -721,12 +722,16 @@ body {
 }
 
 .recall__card:after {
+  position: absolute;
   content: '';
+  left: -5px;
+  top: 40px;
+  border-radius: 4px;
   width: 30px;
   height: 30px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: red;
+  background: #f2f8fa;
 }
 
 .recall__name {
@@ -737,5 +742,36 @@ body {
 .recall__text {
   font-size: 15px;
   font-weight: 300;
+  line-height: 25px;
+  color: #464646;
+}
+
+.works {
+  background: #f5fbfd;
+}
+
+.works__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #8ec740;
+}
+
+.works__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 9px;
+}
+
+.works__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #464646;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,7 @@
       margin-right: 30px
     
   &__card
+    position: relative
     max-width: 425px
     max-height: 177px
     background: $bgc-recall
@@ -17,14 +18,20 @@
     margin-left: 18px
     padding: 27px
     &:after
+      position: absolute
       content: ''
+      left: -5px
+      top: 40px
+      border-radius: 4px
       width: 30px
       height: 30px
       transform: rotate(45deg)
-      background: red
+      background: $bgc-recall
   &__name
     font-size: 17px
     font-weight: 500
   &__text
     font-size: 15px
     font-weight: 300
+    line-height: 25px
+    color: $text-last
