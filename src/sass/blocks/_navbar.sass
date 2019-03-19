@@ -1,0 +1,30 @@
+.navbar
+  background: $bgc-nav
+  &-block
+    display: flex
+    justify-content: space-between
+    
+  &__link
+    position: relative
+    display: inline-block
+    height: 65px
+    font-size: 14px
+    font-weight: 500
+    text-decoration: none
+    color: $text-main
+    padding: 27px 36px
+    
+    &:before
+      content: ''
+      position: absolute
+      top: 11px
+      right: -1px
+      height: 41px
+      border: 1px dotted $btn-other
+    &:last-child
+      &:before
+        display: none
+    
+    &:hover
+      color: $text-other
+      background: $btn-nav
