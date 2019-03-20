@@ -1,13 +1,20 @@
 .works
+  padding-top: 24px
+  padding-bottom: 28px
   background: $bgc-works
+  &__title
+    margin-bottom: 20px
   &__list
     display: flex
     justify-content: space-between
     flex-wrap: wrap
     color: $btn-main
+    padding-left: 18px
   &__item
-    flex-basis: 50%
-    margin-bottom: 9px
+    flex-basis: 47%
+    margin-bottom: 8px
+    &:nth-child(odd)
+      margin-right: 5px
   &__text
     font-size: 16px
     font-weight: 400
