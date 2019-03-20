@@ -1,5 +1,6 @@
 .navbar
   background: $bgc-nav
+  position: relative
   &-block
     display: flex
     justify-content: space-between
@@ -28,3 +29,43 @@
     &:hover
       color: $text-other
       background: $btn-nav
+.menu
+  &__link
+    &:hover+ .menu__works
+      display: block
+  &__work
+    position: relative
+    display: inline-block
+    height: 65px
+    font-size: 14px
+    font-weight: 500
+    text-decoration: none
+    color: $text-main
+    padding: 25px
+    text-transform: uppercase
+    &:hover
+      color: $text-other
+    // &:hover+ .menu__link
+    //   color: $text-other
+    //   background: $btn-nav
+    &:nth-child(-n+4)
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0px
+        left: 14px 
+        width: 378px
+        border-bottom: 1px solid $btn-other
+
+    &s
+      position: absolute
+      background: $btn-nav
+      display: none
+      bottom: -325px
+      left: 713px
+      max-width: 409px
+      &:hover
+        display: block
+        
+
+    
