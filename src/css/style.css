@@ -1168,20 +1168,35 @@ body {
 }
 
 @media (max-width: 576px) {
+  .info {
+    position: relative;
+  }
   .info__card {
     width: 263px;
   }
   .slick {
     padding: 0 28px;
   }
+  .slick__arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 20px;
+    width: 320px;
+  }
   .slick__leftArrow {
     background: #8ec740;
-    border: 5px solid #8ec740;
+    border: 7px solid #8ec740;
     border-radius: 4px;
   }
   .slick__rightArrow {
     background: #8ec740;
-    border: 5px solid #8ec740;
+    border: 7px solid #8ec740;
     border-radius: 4px;
   }
 }

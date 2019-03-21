@@ -63,19 +63,30 @@
   
 @media (max-width: 576px)
   .info
+    position: relative
     &__card
       width: 263px
   .slick
     
     padding: 0 28px
     &__arrow
+      display: flex
+      position: absolute
+      top: 40%
+      justify-content: space-between
+      padding: 0 20px
+      width: 320px
+    &__arrowLeft
       
+    &__arrowRight
       
     &__leftArrow
+      
       background: $btn-main
-      border: 5px solid $btn-main
+      border: 7px solid $btn-main
       border-radius: 4px
     &__rightArrow
+     
       background: $btn-main
-      border: 5px solid $btn-main
+      border: 7px solid $btn-main
       border-radius: 4px
