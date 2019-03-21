@@ -408,6 +408,9 @@ body {
   .container {
     width: 560px;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -582,6 +585,29 @@ body {
   .header__button {
     margin-bottom: 5px;
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background: #dcf2f8;
+  }
+  .header__contacts {
+    display: none;
+  }
+  .header__subtitle {
+    display: none;
+  }
+  .header__account {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__button {
+    background: url("../img/header/acc.png");
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -984,6 +1010,23 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .recall-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .recall__card {
+    max-width: 425px;
+    max-height: 177px;
+  }
+  .recall__text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+}
+
 .works {
   padding-top: 24px;
   padding-bottom: 28px;
@@ -1033,6 +1076,21 @@ body {
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .works__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
