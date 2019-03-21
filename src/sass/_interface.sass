@@ -29,7 +29,10 @@ body
   border: 1px solid rgba(0, 0, 0, 0.05)
   border-radius: 27.5px
   background-color: #ffffff
-
+.mobile
+  &_on
+    display: none
+  
 
 @media (max-width: 1200px)
   .container
@@ -40,13 +43,22 @@ body
 @media (max-width: 992px)
   .container
     width: 760px
+  .button
+    &:hover
+      cursor: default 
+      background-color: $btn-main
+
 
 
 @media (max-width: 768px)
   .container
     width: 560px
   .mobile
-    display: none
+    &_on
+      display: block
+    &_off
+      display: none
+
 
 
 @media (max-width: 576px)

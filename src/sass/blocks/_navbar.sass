@@ -100,5 +100,21 @@
         left: 52.8%
         max-width: 266px
 
+@media (max-width: 768px)
+  .navbar 
+    display: none
+    &__link
+      font-size: 15px
+      font-weight: 400
+      &:before
+        border: none
+        border-bottom: 1px solid $text-other
+        width: 100%
+        bottom: 0
+        left: 0
+      &:hover
+        background: $bgc-nav
+        color: $text-main
+
 
     

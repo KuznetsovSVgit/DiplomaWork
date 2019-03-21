@@ -1,0 +1,19 @@
+.modalMenu
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  &_active
+    display: flex
+  &-block
+    width: 285px
+    background: $bgc-nav
+    display: flex
+    flex-direction: column
+  &__cross
+    background: $text-other
+    padding: 19px
+    text-align: right
