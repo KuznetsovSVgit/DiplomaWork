@@ -2,7 +2,17 @@ $(document).ready(function(){
 var btnmenu = $('#btnmenu');
 var modalMenu = $('#modalMenu');
 var modalMenuClose = $('#modalMenuClose');
-var slick = $('#slick');
+// var slickInfo = $('#slick');
+// // var slickRecall = $('#slickRecall');
+
+
+// $(window).resize(function() {
+  
+//   if ($(window).width() < 576) {
+//     slickInfo.addClass('slick slick-initialized slick-slider');
+//     slickInfo.removeClass('info-block');
+//  }
+//   });
 
 $('.slick').slick({
   slidesToShow: 1,
@@ -12,13 +22,28 @@ $('.slick').slick({
   prevArrow: $('.slick__leftArrow'),
   nextArrow: $('.slick__rightArrow'),
 });
+$('.slickRecall').slick({
+  // slidesToShow: 1,
+  // slidesToScroll: 1,
+  responsive: [
+    {
+        breakpoint: 9999,
+        settings: "unslick"
+    },
+    {
+       breakpoint: 576,
+       settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          // prevArrow: $('.slickRecall__leftArrow'),
+          // nextArrow: $('.slickRecall__rightArrow')
+    }
+},
+]
+});
 // Слайдер
-// $(window).resize(function() {
-// if ($(window).width() < 576) {
-//  slick.removeClass('info-block');
-//  slick.addClass('slick');
-
-// })
 
 // Открытие/закрытие меню
 btnmenu.on('click', function(){
