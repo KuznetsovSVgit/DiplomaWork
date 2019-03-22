@@ -25,15 +25,63 @@
     </div>
     <span class="subtitle">Наши сертификаты</span>
     <div class="aboutSlick">
-      <img src="img/about/Layer_44.jpg" alt="">
-      <img src="img/about/Layer_45.jpg" alt="">
-      <img src="img/about/Layer_46.jpg" alt="">
-      <img src="img/about/Layer_47.jpg" alt="">
-      <img src="img/about/Layer_48.jpg" alt="">
+
+      <div class="about__item"><img class="about__img" src="img/about/Layer_44.jpg" alt=""></div>
+      <div class="about__item"><img class="about__img" src="img/about/Layer_45.jpg" alt=""></div>
+      <div class="about__item"><img class="about__img" src="img/about/Layer_46.jpg" alt=""></div>
+      <div class="about__item"><img class="about__img" src="img/about/Layer_47.jpg" alt=""></div>
+      <div class="about__item"><img class="about__img" src="img/about/Layer_48.jpg" alt=""></div>
+
     </div>
+    <div class="about__arrow">
+        <div class="about__arrowLeft"><img class="about__leftArrow" src="img/recall/leftArrow.png" alt=""></div>
+        <div class="about__arrowRight"><img class="about__rightArrow" src="img/recall/arrow-right.png" alt=""></div>
   </div>
-</srction>
+  </div>
+</section>
 
-
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/slick.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.aboutSlick').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: $('.about__leftArrow'),
+    nextArrow: $('.about__rightArrow'),
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+         slidesToShow: 4,
+         slidesToScroll: 1
+        }
+     },
+     {
+       breakpoint: 920,
+       settings: {
+         slidesToShow: 3,
+         slidesToScroll: 1
+       }
+     },
+     {
+       breakpoint: 768,
+       settings: {
+         slidesToShow: 2,
+         slidesToScroll: 1
+       }
+     },
+     {
+       breakpoint: 576,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
+       }
+     }
+   ]
+ })
+});
+</script>
 </body>
 </html>

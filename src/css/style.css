@@ -1695,6 +1695,11 @@ body {
   font-weight: 400;
 }
 
+.about__img {
+  border: 1px solid #cce4ea;
+  padding: 5px;
+}
+
 .headerLog {
   position: fixed;
   left: 0;
