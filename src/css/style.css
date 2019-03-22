@@ -1010,6 +1010,10 @@ body {
   display: none;
 }
 
+.hero_active {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   .hero__image {
     height: 350px;
@@ -1037,6 +1041,9 @@ body {
     border-radius: 20px;
     font-size: 12px;
     margin-right: 10px;
+  }
+  .hero__input {
+    padding-left: 13px;
   }
 }
 

@@ -2,6 +2,8 @@ $(document).ready(function(){
 var btnmenu = $('#btnmenu');
 var modalMenu = $('#modalMenu');
 var modalMenuClose = $('#modalMenuClose');
+var heroButton = $('#heroButton');
+var heroExtro = $('#heroExtro');
 // var slickInfo = $('#slick');
 // // var slickRecall = $('#slickRecall');
 
@@ -48,9 +50,17 @@ $('.slickRecall').slick({
 // Открытие/закрытие меню
 btnmenu.on('click', function(){
 modalMenu.addClass('modalMenu_active');
-  })
+})
 modalMenuClose.on('click', function(){
 modalMenu.removeClass('modalMenu_active');
-});
+})
+// Открытие доп. формы
+heroButton.on('click', function(){
+heroExtro.addClass('hero_active');
+})
+// Закрытие доп. формы
+// heroButton.on('click', function(){
+// heroExtro.removeClass('hero_active');
+// })
 });
 
