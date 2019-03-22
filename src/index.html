@@ -33,8 +33,8 @@
         <span class="header__subtitle">Ваша Учеба - Наша Работа!</span>
       </div>
       <div class="header__account">
-        <a class="header__button" href="#"> <img class="mobile_on" src="img/header/acc.png" alt=""> <span class="mobile_off">вход в личный кабинет</span></a>
-        <a class="button header__btn" href="#"> <img class="mobile_on" src="img/header/pencil.png" alt=""> <span class="mobile_off">ЗАКАЗАТЬ РАБОТУ</span></a>
+        <a class="header__button" href="#" id="headerLogBtn"> <img class="mobile_on" src="img/header/acc.png" alt=""> <span class="mobile_off">вход в личный кабинет</span></a>
+        <a class="button header__btn" href="#" id="modalOrderBtn"> <img class="mobile_on" src="img/header/pencil.png" alt=""> <span class="mobile_off">ЗАКАЗАТЬ РАБОТУ</span></a>
       </div>
     </div>
   </div>
@@ -228,6 +228,32 @@
     <div class="footer__end"><span class="footer__endline">2016 - 2018 © umnik.by</span></div>
   </div>
 </footer>
+
+<div class="headerLog" id="headerLog">
+  <div class="headerLog-block">
+    <h3 class="headerLog__title">Вход в личный кабинет:</h3>
+    <form action="" class="headerLog__form">
+      <input type="text" class="input headerLog__input" placeholder="Логин*">
+      <input type="text" class="input headerLog__input" placeholder="Пароль*">
+      <button class="button headerLog__btn">Войти</button>
+      <button class="button headerLog__btn" id="headerLogClose">Отмена</button>
+    </form>
+  </div>
+</div>
+
+<div class="modalOrder" id="modalOrder">
+  <div class="modalOrder-block">
+    <h3 class="modalOrder__title">Заказать работу:</h3>
+    <form action="" class="modalOrder__form">
+      <input type="text" class="input modalOrder__input" placeholder="Имя*">
+      <input type="text" class="input modalOrder__input" placeholder="Телефон*">
+      <input type="text" class="input modalOrder__input" placeholder="E-mail*">
+      <input type="text" class="input modalOrder__input" placeholder="Тип работы*">
+      <button class="button modalOrder__btn">Отправить</button>
+      <button class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
+    </form>
+  </div class="modalOrder-block">
+</div>
 
 <div class="modalMenu" id="modalMenu">
   <div class="modalMenu-block">

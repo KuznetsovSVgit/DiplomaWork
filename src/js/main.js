@@ -4,6 +4,12 @@ var modalMenu = $('#modalMenu');
 var modalMenuClose = $('#modalMenuClose');
 var heroButton = $('#heroButton');
 var heroExtro = $('#heroExtro');
+var headerLog = $('#headerLog');
+var headerLogBtn = $('#headerLogBtn');
+var headerLogClose = $('#headerLogClose');
+var modalOrder = $('#modalOrder');
+var modalOrderBtn = $('#modalOrderBtn');
+var modalOrderClose = $('#modalOrderClose');
 // var slickInfo = $('#slick');
 // // var slickRecall = $('#slickRecall');
 
@@ -13,6 +19,7 @@ var heroExtro = $('#heroExtro');
 //     slickInfo.removeClass('info-block');
 //  }
 //   });
+// Слайдер
 $('.info-block').slick({
   prevArrow: $('.info__leftArrow'),
   nextArrow: $('.info__rightArrow'),
@@ -43,11 +50,23 @@ $('.recall-block').slick({
        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // autoplay: true,
-          // autoplaySpeed: 5000
+          autoplay: true,
+          autoplaySpeed: 5000
     }},]});
-// Слайдер
-
+// Открытие/закрытие Login
+headerLogBtn.on('click', function(){
+headerLog.addClass('headerLog_active');
+})
+headerLogClose.on('click', function(){
+headerLog.removeClass('headerLog_active'); 
+})
+// Открытие/закрытие окно заказа
+modalOrderBtn.on('click', function(){
+modalOrder.addClass('modalOrder_active');
+})
+modalOrderClose.on('click', function(){
+modalOrder.removeClass('modalOrder_active'); 
+})
 // Открытие/закрытие меню
 btnmenu.on('click', function(){
 modalMenu.addClass('modalMenu_active');
