@@ -7,26 +7,15 @@ var heroExtro = $('#heroExtro');
 // var slickInfo = $('#slick');
 // // var slickRecall = $('#slickRecall');
 
-
 // $(window).resize(function() {
-  
 //   if ($(window).width() < 576) {
 //     slickInfo.addClass('slick slick-initialized slick-slider');
 //     slickInfo.removeClass('info-block');
 //  }
 //   });
-
-$('.slick').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  prevArrow: $('.slick__leftArrow'),
-  nextArrow: $('.slick__rightArrow'),
-});
-$('.slickRecall').slick({
-  // slidesToShow: 1,
-  // slidesToScroll: 1,
+$('.info-block').slick({
+  prevArrow: $('.info__leftArrow'),
+  nextArrow: $('.info__rightArrow'),
   responsive: [
     {
         breakpoint: 9999,
@@ -37,14 +26,26 @@ $('.slickRecall').slick({
        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
           autoplay: true,
-          autoplaySpeed: 5000,
-          // prevArrow: $('.slickRecall__leftArrow'),
-          // nextArrow: $('.slickRecall__rightArrow')
-    }
-},
-]
-});
+          autoplaySpeed: 5000 
+}},]});
+$('.recall-block').slick({
+  prevArrow: $('.recall__leftArrow'),
+  nextArrow: $('.recall__rightArrow'),
+  responsive: [
+    {
+        breakpoint: 9999,
+        settings: "unslick"
+    },
+    {
+       breakpoint: 576,
+       settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // autoplay: true,
+          // autoplaySpeed: 5000
+    }},]});
 // Слайдер
 
 // Открытие/закрытие меню
