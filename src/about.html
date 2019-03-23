@@ -9,7 +9,55 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <header class="header">
+        <div class="container">
+          <div class="header-block">
+            <div class="header__menu mobile_on"><img src="img/header/menu.png" id="btnmenu" alt=""></div>
+            <div class="header__contacts">
+              <div class="phones-block header__phones">
+                <div class="phones__img"><img src="img/header/phone.png" alt=""></div> 
+                <div class="phones__links">
+                  <a class="phones__link" href="tel:+375(29)1232323">+375 (29) 123-23-23</a>
+                  <a class="phones__link" href="tel:+375(29)1323232">+375 (29) 132-32-32</a>
+                </div>
+              </div>
+              <div class="mail-block heder__mail">
+                <div class="mail__img"><img src="img/header/email.png" alt=""></div> 
+                <a class="mail__link" href="mailto:zakaz@umnik.by">zakaz@umnik.by</a>
+              </div>
+            </div>
+            <div class="header__logo">
+              <span class="header__title">Образовательный центр</span>
+              <h1 class="header__headline">УМНИК</h1>
+              <span class="header__subtitle">Ваша Учеба - Наша Работа!</span>
+            </div>
+            <div class="header__account">
+              <a class="header__button" href="#" id="headerLogBtn"> <img class="mobile_on" src="img/header/acc.png" alt=""> <span class="mobile_off">вход в личный кабинет</span></a>
+              <a class="button header__btn" href="#" id="modalOrderBtn-1"> <img class="mobile_on" src="img/header/pencil.png" alt=""> <span class="mobile_off">ЗАКАЗАТЬ РАБОТУ</span></a>
+            </div>
+          </div>
+        </div>
+      </header> 
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-block">
+            <a class="navbar__link" href="index.html">ГЛАВНАЯ</a>
+            <a class="navbar__link" href="about.html">О КОМПАНИИ</a>
+            <a class="navbar__link" href="#">КЛИЕНТАМ</a>
+            <a class="navbar__link" href="#">НАШИ ЦЕНЫ</a>
+            <a class="navbar__link menu__link" href="#">МЫ ВЫПОЛНЯЕМ</a>
+            <div class="menu__works">
+              <a href="#" id="modalOrderBtn-2" class="menu__work">Курсовые работы на заказ</a>
+              <a href="#" id="modalOrderBtn-3" class="menu__work">дипломные работы на заказ</a>
+              <a href="#" id="modalOrderBtn-4" class="menu__work">контрольные работы на заказ</a>
+              <a href="#" id="modalOrderBtn-5" class="menu__work">рефераты на заказ</a>
+              <a href="#" id="modalOrderBtn-6" class="menu__work">отчеты о практике на заказ</a>
+            </div>
+            <a class="navbar__link" href="#">ГОТОВЫЕ РАБОТЫ</a>
+            <a class="navbar__link" href="contacts.html">КОНТАКТЫ</a>
+          </div>
+        </div>
+      </nav>
 <section class="section about">
   <div class="container">
     <div class="about-block">
@@ -42,8 +90,87 @@
   </div>
 </section>
 
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/slick.min.js"></script>
+<footer class="footer">
+    <div class="container">
+      <div class="footer__contacts">
+        <div class="footer__item">
+          <div class="footer__image"><img src="img/footer/address.png" alt="" class="footer__img"></div>
+          <div class="footer__text">
+            <span class="footer__title">Адрес:</span>
+            <p class="footer__detail">г.Минск, ул. Кальварийская, 17, офис 402, ст. метро "Молодежная"</p>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__image"><img src="img/footer/phone.png" alt="" class="footer__img"></div>
+          <div class="footer__text">
+            <span class="footer__title">Телефоны:</span>
+            <p class="footer__detail">+375(29) 123-23-23, +375(29) 132-32-32 +375(25) 555-55-55</p>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__image"><img src="img/footer/email.png" alt="" class="footer__img"></div>
+          <div class="footer__text">
+            <span class="footer__title">Почта:</span>
+            <p class="footer__detail">zakaz@umnik.by</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__end"><span class="footer__endline">2016 - 2018 © umnik.by</span></div>
+    </div>
+  </footer>
+  
+  <div class="headerLog" id="headerLog">
+      <div class="headerLog-block">
+        <h3 class="headerLog__title">Вход в личный кабинет:</h3>
+        <form action="" class="headerLog__form">
+          <input type="text" class="input headerLog__input" placeholder="Логин*">
+          <input type="text" class="input headerLog__input" placeholder="Пароль*">
+          <button class="button headerLog__btn">Войти</button>
+          <button class="button headerLog__btn" id="headerLogClose">Отмена</button>
+        </form>
+      </div>
+    </div>
+    
+
+  <div class="modalOrder" id="modalOrder">
+    <div class="modalOrder-block">
+      <h3 class="modalOrder__title">Заказать работу:</h3>
+      <form action="" class="modalOrder__form">
+        <input type="text" class="input modalOrder__input" placeholder="Имя*">
+        <input type="text" class="input modalOrder__input" placeholder="Телефон*">
+        <input type="text" class="input modalOrder__input" placeholder="E-mail*">
+        <input type="text" class="input modalOrder__input" placeholder="Тип работы*">
+        <button class="button modalOrder__btn">Отправить</button>
+        <button class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
+      </form>
+    </div class="modalOrder-block">
+  </div>
+  
+  <div class="modalMenu" id="modalMenu">
+    <div class="modalMenu-block">
+      <div class="modalMenu__cross"><img src="img/header/cross.png" id="modalMenuClose" alt=""></div>
+        <a class="navbar__link" href="">Главная</a>
+        <a class="navbar__link" href="">О компании</a>
+        <a class="navbar__link" href="">Клиентам</a>
+        <a class="navbar__link" href="">Наши цены</a>
+        <a class="navbar__link menu__link" href="">Мы выполняем</a>
+        <div class="menu__works">
+          <a href="" class="menu__work">Курсовые работы на заказ</a>
+          <a href="" class="menu__work">Дипломные работы на заказ</a>
+          <a href="" class="menu__work">Контрольные работы на заказ</a>
+          <a href="" class="menu__work">Рефераты на заказ</a>
+          <a href="" class="menu__work">Отчеты о практике на заказ</a>
+        </div>
+        <a class="navbar__link" href="">Готовые работы</a>
+        <a class="navbar__link" href="">Контакты</a>
+    </div>
+  </div>
+  
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
+
+
 <script>
 $(document).ready(function() {
   $('.aboutSlick').slick({

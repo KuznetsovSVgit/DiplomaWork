@@ -1612,6 +1612,10 @@ body {
   line-height: 20px;
 }
 
+.footer__image {
+  margin-right: 11px;
+}
+
 @media (max-width: 576px) {
   .footer .footer__image {
     display: none;
@@ -1987,6 +1991,10 @@ body {
   font-weight: 300;
 }
 
+.contacts {
+  background: #f7fcfd;
+}
+
 .contacts__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1997,8 +2005,9 @@ body {
   margin-left: 10px;
 }
 
-.n {
-  font-size: 30px;
+.contacts__label {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .leftInput, .rightInput {

@@ -8,17 +8,8 @@ var headerLog = $('#headerLog');
 var headerLogBtn = $('#headerLogBtn');
 var headerLogClose = $('#headerLogClose');
 var modalOrder = $('#modalOrder');
-var modalOrderBtn = $('#modalOrderBtn');
+var modalOrderBtn = $('#modalOrderBtn-1, #modalOrderBtn-2, #modalOrderBtn-3, #modalOrderBtn-4, #modalOrderBtn-5, #modalOrderBtn-6');
 var modalOrderClose = $('#modalOrderClose');
-// var slickInfo = $('#slick');
-// // var slickRecall = $('#slickRecall');
-
-// $(window).resize(function() {
-//   if ($(window).width() < 576) {
-//     slickInfo.addClass('slick slick-initialized slick-slider');
-//     slickInfo.removeClass('info-block');
-//  }
-//   });
 // Слайдер
 $('.info-block').slick({
   prevArrow: $('.info__leftArrow'),
@@ -78,6 +69,10 @@ modalMenu.removeClass('modalMenu_active');
 heroButton.on('click', function(){
 heroExtro.addClass('hero_active');
 })
+// Валидация форм
+$('#hero-form').validate({
+
+});
 // Закрытие доп. формы
 // heroButton.on('click', function(){
 // heroExtro.removeClass('hero_active');

@@ -34,7 +34,7 @@
       </div>
       <div class="header__account">
         <a class="header__button" href="#" id="headerLogBtn"> <img class="mobile_on" src="img/header/acc.png" alt=""> <span class="mobile_off">вход в личный кабинет</span></a>
-        <a class="button header__btn" href="#" id="modalOrderBtn"> <img class="mobile_on" src="img/header/pencil.png" alt=""> <span class="mobile_off">ЗАКАЗАТЬ РАБОТУ</span></a>
+        <a class="button header__btn" href="#" id="modalOrderBtn-1"> <img class="mobile_on" src="img/header/pencil.png" alt=""> <span class="mobile_off">ЗАКАЗАТЬ РАБОТУ</span></a>
       </div>
     </div>
   </div>
@@ -42,20 +42,20 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-block">
-      <a class="navbar__link" href="">ГЛАВНАЯ</a>
-      <a class="navbar__link" href="">О КОМПАНИИ</a>
-      <a class="navbar__link" href="">КЛИЕНТАМ</a>
-      <a class="navbar__link" href="">НАШИ ЦЕНЫ</a>
-      <a class="navbar__link menu__link" href="">МЫ ВЫПОЛНЯЕМ</a>
+      <a class="navbar__link" href="index.html">ГЛАВНАЯ</a>
+      <a class="navbar__link" href="about.html">О КОМПАНИИ</a>
+      <a class="navbar__link" href="#">КЛИЕНТАМ</a>
+      <a class="navbar__link" href="#">НАШИ ЦЕНЫ</a>
+      <a class="navbar__link menu__link" href="#">МЫ ВЫПОЛНЯЕМ</a>
       <div class="menu__works">
-        <a href="" class="menu__work">Курсовые работы на заказ</a>
-        <a href="" class="menu__work">дипломные работы на заказ</a>
-        <a href="" class="menu__work">контрольные работы на заказ</a>
-        <a href="" class="menu__work">рефераты на заказ</a>
-        <a href="" class="menu__work">отчеты о практике на заказ</a>
+        <a href="#" id="modalOrderBtn-2" class="menu__work">Курсовые работы на заказ</a>
+        <a href="#" id="modalOrderBtn-3" class="menu__work">дипломные работы на заказ</a>
+        <a href="#" id="modalOrderBtn-4" class="menu__work">контрольные работы на заказ</a>
+        <a href="#" id="modalOrderBtn-5" class="menu__work">рефераты на заказ</a>
+        <a href="#" id="modalOrderBtn-6" class="menu__work">отчеты о практике на заказ</a>
       </div>
-      <a class="navbar__link" href="">ГОТОВЫЕ РАБОТЫ</a>
-      <a class="navbar__link" href="">КОНТАКТЫ</a>
+      <a class="navbar__link" href="#">ГОТОВЫЕ РАБОТЫ</a>
+      <a class="navbar__link" href="contacts.html">КОНТАКТЫ</a>
     </div>
   </div>
 </nav>
@@ -68,10 +68,11 @@
         <h2 class="hero__title">Мы пишем уникальные дипломные, курсовые и контрольные работы</h2>
         <span class="hero__subtitle">Заполните форму ниже и с Вами свяжется наш менеджер, чтобы обсудить детали и ответить на все Ваши вопросы</span>
         <form action="#" id="hero-form" class="form hero-form">
-          <input type="text" name="username" class="input hero__input" placeholder="Имя*">
-          <input type="text" name="username" class="input hero__input" placeholder="E-mail/Телефон*">
-          <input type="text" name="work" class="input hero__input" placeholder="Тип работы*">
-          <div class="hero__extro" id="heroExtro">
+          <input type="text" name="username" required class="input hero__input" placeholder="Имя*">
+          <input type="tel" name="phone" required class="input hero__input" placeholder="E-mail/Телефон*">
+          <input type="text" name="work" required class="input hero__input" placeholder="Тип работы*">
+         
+           <div class="hero__extro" id="heroExtro">
             <input type="text" class="input hero__input" placeholder="Срок выполнения">
             <input type="text" class="input hero__input" placeholder="Количество страниц">
           </div>
@@ -278,6 +279,7 @@
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 
 </body>
 </html>
