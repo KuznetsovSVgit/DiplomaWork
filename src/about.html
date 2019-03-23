@@ -13,7 +13,7 @@
 <section class="section about">
   <div class="container">
     <div class="about-block">
-      <div class="about__image"> <img src="img/about/about-img.png" alt=""> </div>
+      <div class="about__imgbox"> <img class="about__image" src="img/about/about-img.png" alt=""> </div>
       <div class="about__box">
         <h3 class="about__title">О нас</h3>
         <p class="about__text">Мы работаем на рынке образовательных услуг уже более 9 лет. Накопленный за время успешной деятельности опыт, позволяет нам оказывать весь спектр образовательных услуг на высоком уровне.<br>
@@ -23,20 +23,22 @@
         </p>
       </div>
     </div>
-    <span class="subtitle">Наши сертификаты</span>
-    <div class="aboutSlick">
-
-      <div class="about__item"><img class="about__img" src="img/about/Layer_44.jpg" alt=""></div>
-      <div class="about__item"><img class="about__img" src="img/about/Layer_45.jpg" alt=""></div>
-      <div class="about__item"><img class="about__img" src="img/about/Layer_46.jpg" alt=""></div>
-      <div class="about__item"><img class="about__img" src="img/about/Layer_47.jpg" alt=""></div>
-      <div class="about__item"><img class="about__img" src="img/about/Layer_48.jpg" alt=""></div>
-
-    </div>
-    <div class="about__arrow">
+    <div class="about__slick">
+      <span class="about__subtitle">Наши сертификаты</span>
+      <div class="aboutSlick">
+    
+        <div class="about__item"><img class="about__img" src="img/about/Layer_44.jpg" alt=""></div>
+        <div class="about__item"><img class="about__img" src="img/about/Layer_45.jpg" alt=""></div>
+        <div class="about__item"><img class="about__img" src="img/about/Layer_46.jpg" alt=""></div>
+        <div class="about__item"><img class="about__img" src="img/about/Layer_47.jpg" alt=""></div>
+        <div class="about__item"><img class="about__img" src="img/about/Layer_48.jpg" alt=""></div>
+        <div class="about__item"><img class="about__img" src="img/about/Layer_45.jpg" alt=""></div>
+      </div>
+      <div class="about__arrow">
         <div class="about__arrowLeft"><img class="about__leftArrow" src="img/recall/leftArrow.png" alt=""></div>
         <div class="about__arrowRight"><img class="about__rightArrow" src="img/recall/arrow-right.png" alt=""></div>
-  </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -46,7 +48,7 @@
 $(document).ready(function() {
   $('.aboutSlick').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     prevArrow: $('.about__leftArrow'),
     nextArrow: $('.about__rightArrow'),
@@ -59,7 +61,7 @@ $(document).ready(function() {
         }
      },
      {
-       breakpoint: 920,
+       breakpoint: 993,
        settings: {
          slidesToShow: 3,
          slidesToScroll: 1
