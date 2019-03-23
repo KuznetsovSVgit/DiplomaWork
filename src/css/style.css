@@ -1933,15 +1933,23 @@ body {
   margin: 0 auto 10px auto;
 }
 
+.map {
+  padding-top: 30px;
+}
+
 .map__title {
   font-size: 24px;
   font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 .map__text {
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
+  margin-top: 9px;
+  margin-bottom: 30px;
 }
 
 .map__subtitle {
@@ -1959,10 +1967,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .map__map {
-  max-width: 750px;
+  width: 750px;
   height: 410px;
   margin-right: 28px;
 }
@@ -2002,12 +2011,21 @@ body {
 }
 
 .contacts__input {
-  margin-left: 10px;
+  width: 360px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  background-color: #ffffff;
 }
 
 .contacts__label {
   font-size: 14px;
   font-weight: 400;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0px;
 }
 
 .leftInput, .rightInput {
