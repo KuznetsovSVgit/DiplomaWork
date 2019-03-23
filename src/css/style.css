@@ -1777,6 +1777,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .about__imgbox {
+    display: none;
+  }
+}
+
 .headerLog {
   position: fixed;
   left: 0;
@@ -1921,5 +1927,87 @@ body {
 .modalOrder__btn {
   width: 300px;
   margin: 0 auto 10px auto;
+}
+
+.map__title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.map__text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.map__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.map-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map__map {
+  max-width: 750px;
+  height: 410px;
+  margin-right: 28px;
+}
+
+.mapContacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mapContacts__image {
+  margin-right: 10px;
+}
+
+.mapContacts__text {
+  width: 270px;
+}
+
+.mapContacts__title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mapContacts__detail {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__input {
+  margin-left: 10px;
+}
+
+.n {
+  font-size: 30px;
+}
+
+.leftInput, .rightInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
