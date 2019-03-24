@@ -117,6 +117,8 @@
       <div class="footer__end"><span class="footer__endline">2016 - 2018 © umnik.by</span></div>
     </div>
   </footer>
+
+  <a class="btnUp" href=""><img src="img/footer/up.png" alt=""></a>
   
   <div class="headerLog" id="headerLog">
       <div class="headerLog-block">
@@ -131,19 +133,19 @@
     </div>
     
 
-  <div class="modalOrder" id="modalOrder">
-    <div class="modalOrder-block">
-      <h3 class="modalOrder__title">Заказать работу:</h3>
-      <form action="" class="modalOrder__form">
-        <input type="text" class="input modalOrder__input" placeholder="Имя*">
-        <input type="text" class="input modalOrder__input" placeholder="Телефон*">
-        <input type="text" class="input modalOrder__input" placeholder="E-mail*">
-        <input type="text" class="input modalOrder__input" placeholder="Тип работы*">
-        <button class="button modalOrder__btn">Отправить</button>
-        <button class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
-      </form>
-    </div class="modalOrder-block">
-  </div>
+    <div class="modalOrder" id="modalOrder">
+        <div class="modalOrder-block">
+          <h3 class="modalOrder__title">Заказать работу:</h3>
+          <form action="mail.php" method="POST" class="modalOrder__form">
+            <input type="text" name="user_name" class="input modalOrder__input" placeholder="Имя*">
+            <input type="tel" name="user_phone" class="input modalOrder__input phone" placeholder="Телефон*">
+            <input type="email" name="user_email" class="input modalOrder__input" placeholder="E-mail*">
+            <input type="text" name="type_work" class="input modalOrder__input" placeholder="Тип работы*">
+            <button type="submit" class="button modalOrder__btn">Отправить</button>
+            <button class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
+          </form>
+        </div>
+      </div>
   
   <div class="modalMenu" id="modalMenu">
     <div class="modalMenu-block">
@@ -168,6 +170,9 @@
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+
 
 
 <script>

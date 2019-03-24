@@ -68,9 +68,11 @@ heroButton.on('click', function(){
 heroExtro.addClass('hero_active');
 })
 // Валидация форм
-$('#hero-form').validate({
+$('#order-form').validate({
 
 });
+// Маска для телефона
+$('.phone').mask('+7 (999) 999-99-99');
 // Закрытие доп. формы
 // heroButton.on('click', function(){
 // heroExtro.removeClass('hero_active');

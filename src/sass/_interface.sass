@@ -2,6 +2,7 @@
   box-sizing: border-box
 body
   font-family: 'Roboto', sans-serif
+ 
 .container
   width: 1140px
   margin: auto
@@ -32,7 +33,18 @@ body
 .mobile
   &_on
     display: none
-  
+.btnUp
+  display: inline-block
+  position: fixed
+  width: 54px
+  height: 55px
+  right: 10px
+  bottom: 10px
+  text-align: center
+  padding: 20px 0
+  background: $text-other
+  border-radius: 6px  
+  opacity: 0.5
 
 @media (max-width: 1200px)
   .container

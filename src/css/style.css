@@ -393,6 +393,20 @@ body {
   display: none;
 }
 
+.btnUp {
+  display: inline-block;
+  position: fixed;
+  width: 54px;
+  height: 55px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  padding: 20px 0;
+  background: #009ac0;
+  border-radius: 6px;
+  opacity: 0.5;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 970px;
