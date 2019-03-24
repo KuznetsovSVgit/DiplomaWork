@@ -8,7 +8,7 @@ var headerLog = $('#headerLog');
 var headerLogBtn = $('#headerLogBtn');
 var headerLogClose = $('#headerLogClose');
 var modalOrder = $('#modalOrder');
-var modalOrderBtn = $('#modalOrderBtn-1, #modalOrderBtn-2, #modalOrderBtn-3, #modalOrderBtn-4, #modalOrderBtn-5, #modalOrderBtn-6');
+var modalOrderBtn = $('#modalOrderBtn-1, #modalOrderBtn-2, #modalOrderBtn-3, #modalOrderBtn-4, #modalOrderBtn-5, #modalOrderBtn-6, #modalOrderBtn-7, #modalOrderBtn-8, #modalOrderBtn-9, #modalOrderBtn-10, #modalOrderBtn-11, #modalOrderBtn-12, #modalOrderBtn-13, #modalOrderBtn-14, #modalOrderBtn-15');
 var modalOrderClose = $('#modalOrderClose');
 // Слайдер
 $('.info-block').slick({

@@ -80,14 +80,14 @@
           <div class="mapContacts__image"><img src="img/footer/phone.png" alt="" class="mapContacts__img"></div>
           <div class="mapContacts__text">
             <span class="mapContacts__title">Телефоны:</span>
-            <p class="mapContacts__detail">+375(29) 123-23-23, +375(29) 132-32-32 +375(25) 555-55-55</p>
+            <p class="mapContacts__detail"><a class="footer__detail" href="tel:+375(29)1232323">+375(29) 123-23-23</a>, <a class="footer__detail" href="tel:+375(29)1323232">+375(29) 132-32-32</a><br><a class="footer__detail" href="tel:+375(29)5555555">+375(25) 555-55-55</a></p>
           </div>
         </div>
         <div class="mapContacts__item">
           <div class="mapContacts__image"><img src="img/footer/email.png" alt="" class="mapContacts__img"></div>
           <div class="mapContacts__text">
             <span class="mapContacts__title">Почта:</span>
-            <p class="mapContacts__detail">zakaz@umnik.by</p>
+            <p class="mapContacts__detail"><a class="mapContacts__detail" href="mailto:zakaz@umnik.by">zakaz@umnik.by</a></p>
           </div>
 
       </div>
@@ -100,20 +100,16 @@
     <h3 class="contacts__title">Остались вопросы?</h3>
     <form action="" class="contacts__form">
       <div class="leftInput">
-        <label class="contacts__label" for="input-1">Ваше имя:</label> <input id="input-1" type="text" class="input contacts__input" placeholder="Ваше имя:">
-        <label class="contacts__label" for="input-2">Эл.почта:</label> <input id="input-2" type="tel" class="input contacts__input" placeholder="Имя*">
-        <label class="contacts__label" for="input-3">Телефон:</label> <input id="input-3" type="email" class="input contacts__input" placeholder="Имя*">
-        <label class="contacts__label" for="input-4">Предмет работы:</label> <input id="input-4" type="text" class="input contacts__input" placeholder="Имя*">
-        
-        
-        
-        
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-1">Ваше имя:</label> <input id="input-1" type="text" class="input contacts__input"></div>    
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-2">Эл.почта:</label> <input id="input-2" type="tel" class="input contacts__input"></div> 
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-3">Телефон:</label> <input id="input-3" type="email" class="input contacts__input"></div> 
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-4">Предмет работы:</label> <input id="input-4" type="text" class="input contacts__input"></div> 
       </div>
       <div class="rightInput">
-        <input type="text" class="input contacts__input" placeholder="Имя*">
-        <input type="text" class="input contacts__input" placeholder="Имя*">
-       </div>
-       <button class="button contacts__btn">Отправить</button>
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-5">Тип работы:</label> <input id="input-5" type="text" class="input contacts__input"></div> 
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-6">Тема работы (вариант<br>или др. данные):</label> <input id="input-6" type="text" class="input contacts__input contacts__input_big"></div> 
+      </div>
+      <button class="button contacts__btn">Отправить</button>
     </form>
   </div>
 </section>
@@ -132,14 +128,14 @@
           <div class="footer__image"><img src="img/footer/phone.png" alt="" class="footer__img"></div>
           <div class="footer__text">
             <span class="footer__title">Телефоны:</span>
-            <p class="footer__detail">+375(29) 123-23-23, +375(29) 132-32-32 +375(25) 555-55-55</p>
+            <p class="footer__detail"><a class="footer__detail" href="tel:+375(29)1232323">+375(29) 123-23-23</a>, <a class="footer__detail" href="tel:+375(29)1323232">+375(29) 132-32-32</a><br><a class="footer__detail" href="tel:+375(29)5555555">+375(25) 555-55-55</a></p>
           </div>
         </div>
         <div class="footer__item">
           <div class="footer__image"><img src="img/footer/email.png" alt="" class="footer__img"></div>
           <div class="footer__text">
             <span class="footer__title">Почта:</span>
-            <p class="footer__detail">zakaz@umnik.by</p>
+            <a class="footer__detail" href="mailto:zakaz@umnik.by">zakaz@umnik.by</a>
           </div>
         </div>
       </div>
@@ -175,25 +171,24 @@
   </div>
   
   <div class="modalMenu" id="modalMenu">
-    <div class="modalMenu-block">
-      <div class="modalMenu__cross"><img src="img/header/cross.png" id="modalMenuClose" alt=""></div>
-        <a class="navbar__link" href="">Главная</a>
-        <a class="navbar__link" href="">О компании</a>
-        <a class="navbar__link" href="">Клиентам</a>
-        <a class="navbar__link" href="">Наши цены</a>
-        <a class="navbar__link menu__link" href="">Мы выполняем</a>
-        <div class="menu__works">
-          <a href="" class="menu__work">Курсовые работы на заказ</a>
-          <a href="" class="menu__work">Дипломные работы на заказ</a>
-          <a href="" class="menu__work">Контрольные работы на заказ</a>
-          <a href="" class="menu__work">Рефераты на заказ</a>
-          <a href="" class="menu__work">Отчеты о практике на заказ</a>
-        </div>
-        <a class="navbar__link" href="">Готовые работы</a>
-        <a class="navbar__link" href="">Контакты</a>
+      <div class="modalMenu-block">
+        <div class="modalMenu__cross"><img src="img/header/cross.png" id="modalMenuClose" alt=""></div>
+          <a class="navbar__link" href="index.html">Главная</a>
+          <a class="navbar__link" href="about.html">О компании</a>
+          <a class="navbar__link" href="#">Клиентам</a>
+          <a class="navbar__link" href="#">Наши цены</a>
+          <a class="navbar__link menu__link" href="#">Мы выполняем</a>
+          <div class="menu__works">
+            <a href="#" id="modalOrderBtn-7" class="menu__work">Курсовые работы на заказ</a>
+            <a href="#" id="modalOrderBtn-8" class="menu__work">Дипломные работы на заказ</a>
+            <a href="#" id="modalOrderBtn-9" class="menu__work">Контрольные работы на заказ</a>
+            <a href="#" id="modalOrderBtn-10" class="menu__work">Рефераты на заказ</a>
+            <a href="#" id="modalOrderBtn-11" class="menu__work">Отчеты о практике на заказ</a>
+          </div>
+          <a class="navbar__link" href="#">Готовые работы</a>
+          <a class="navbar__link" href="contacts.html">Контакты</a>
+      </div>
     </div>
-  </div>
-  
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script src="js/slick.min.js"></script>

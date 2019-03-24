@@ -22,6 +22,7 @@
   &__text
     max-width: 250px
   &__title
+    margin-right: 100px
     font-size: 14px
     font-weight: 400
     line-height: 20px
@@ -29,11 +30,21 @@
     font-size: 14px
     font-weight: 300
     line-height: 20px
+    text-decoration: none
+    color: $text-main
+    margin-top: 5px
+    margin-bottom: 5px
   &__image
     margin-right: 11px
-  
+  @media (max-width: 768px)
+    .footer
+      &__title
+        margin-right: 90px
   @media (max-width: 576px)
     .footer
+      padding-top: 23px
+      &__title
+        margin-right: 0px
       &__image
         display: none
       &__contacts
@@ -43,3 +54,10 @@
         height: auto
       &__item
         text-align: center
+        margin-bottom: 10px
+      &__text
+        display: flex
+        flex-direction: column
+      &__end 
+        padding-top: 24px
+        
