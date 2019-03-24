@@ -41,6 +41,14 @@
     left: 0
     justify-content: space-between
     width: 100%
+  &__leftArrow
+    cursor: pointer
+    &:hover
+      height: 80%
+  &__rightArrow
+    cursor: pointer
+    &:hover
+      height: 80%
 
 @media (max-width: 1200px)
   .about
@@ -65,14 +73,19 @@
       width: 180px
       height: 250px
 
-@media (max-width: 768px)
-  .about
-    &__item
-      margin: 10px
-      max-width: 200px
-      height: 260px
-
 @media (max-width: 576px)
   .about
+    padding-top: 71px
+    &__text
+      margin-top: -3px
+      font-size: 15px
+      font-weight: 300
+      padding: 0px
+
     &__imgbox
       display: none
+    &__subtitle
+      font-size: 18px
+      font-weight: 500
+    &__slick
+      text-align: center

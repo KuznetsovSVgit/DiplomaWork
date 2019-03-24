@@ -24,9 +24,8 @@ $('.info-block').slick({
        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 5000 
+          arrows: false
+          
 }},]});
 $('.recall-block').slick({
   prevArrow: $('.recall__leftArrow'),
@@ -40,9 +39,8 @@ $('.recall-block').slick({
        breakpoint: 576,
        settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 5000
+          slidesToScroll: 1
+          
     }},]});
 // Открытие/закрытие Login
 headerLogBtn.on('click', function(){

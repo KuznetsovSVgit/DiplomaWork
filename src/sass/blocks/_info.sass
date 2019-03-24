@@ -67,7 +67,9 @@
   .info
     &-block
       padding: 0px 100px
-
+    &__card
+      &:nth-child(odd)
+        margin-right: 25px
 
 @media (max-width: 768px)
   .info
@@ -85,15 +87,16 @@
     &__card
       width: 263px
     &-block  
-      padding: 0 28px
+      padding: 0 13px
     &__arrow
       display: flex
       position: absolute
-      top: 40%
+      top: 42%
       justify-content: space-between
-      padding: 0 20px
-      width: 320px
-          
+      padding: 0 6px
+      width: 56.5%
+    &__btn
+      margin-top: 10px      
     &__leftArrow
       background: $btn-main
       border: 7px solid $btn-main

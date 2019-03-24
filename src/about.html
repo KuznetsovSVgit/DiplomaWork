@@ -74,7 +74,6 @@
     <div class="about__slick">
       <span class="about__subtitle">Наши сертификаты</span>
       <div class="aboutSlick">
-    
         <div class="about__item"><img class="about__img" src="img/about/Layer_44.jpg" alt=""></div>
         <div class="about__item"><img class="about__img" src="img/about/Layer_45.jpg" alt=""></div>
         <div class="about__item"><img class="about__img" src="img/about/Layer_46.jpg" alt=""></div>
@@ -124,7 +123,7 @@
         <h3 class="headerLog__title">Вход в личный кабинет:</h3>
         <form action="" class="headerLog__form">
           <input type="text" class="input headerLog__input" placeholder="Логин*">
-          <input type="text" class="input headerLog__input" placeholder="Пароль*">
+          <input type="password" class="input headerLog__input" placeholder="Пароль*">
           <button class="button headerLog__btn">Войти</button>
           <button class="button headerLog__btn" id="headerLogClose">Отмена</button>
         </form>
@@ -174,9 +173,10 @@
 <script>
 $(document).ready(function() {
   $('.aboutSlick').slick({
-    infinite: true,
+    // infinite: true,
+    centerMode: false,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     prevArrow: $('.about__leftArrow'),
     nextArrow: $('.about__rightArrow'),
     responsive: [
@@ -184,7 +184,7 @@ $(document).ready(function() {
       breakpoint: 1200,
       settings: {
          slidesToShow: 4,
-         slidesToScroll: 1
+         slidesToScroll: 2
         }
      },
      {
@@ -195,7 +195,7 @@ $(document).ready(function() {
        }
      },
      {
-       breakpoint: 768,
+       breakpoint: 770,
        settings: {
          slidesToShow: 2,
          slidesToScroll: 1
