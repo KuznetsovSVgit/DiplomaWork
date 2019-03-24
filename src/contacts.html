@@ -159,13 +159,13 @@
     <div class="modalOrder" id="modalOrder">
         <div class="modalOrder-block">
           <h3 class="modalOrder__title">Заказать работу:</h3>
-          <form action="mail.php" method="POST" class="modalOrder__form">
+          <form action="mail.php" method="POST" class="modalOrder__form" id="order-form">
             <input type="text" name="user_name" class="input modalOrder__input" placeholder="Имя*">
-            <input type="tel" name="user_phone" class="input modalOrder__input" placeholder="Телефон*">
+            <input type="tel" name="user_phone" class="input modalOrder__input phone" placeholder="Телефон*">
             <input type="email" name="user_email" class="input modalOrder__input" placeholder="E-mail*">
             <input type="text" name="type_work" class="input modalOrder__input" placeholder="Тип работы*">
             <button type="submit" class="button modalOrder__btn">Отправить</button>
-            <button class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
+            <button type="button" class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
           </form>
         </div>
       </div>

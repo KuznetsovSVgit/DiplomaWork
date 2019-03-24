@@ -382,6 +382,7 @@ body {
 }
 
 .input {
+  outline: none;
   width: 221px;
   height: 45px;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -1124,6 +1125,7 @@ body {
 }
 
 .info__card {
+  outline: none;
   width: 263px;
   height: 385px;
   background-color: #e6f4f8;
@@ -1298,6 +1300,7 @@ body {
 }
 
 .recall__item {
+  outline: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1771,6 +1774,7 @@ body {
 }
 
 .about__item {
+  outline: none;
   position: relative;
   width: 204px;
   height: 274px;
@@ -1849,6 +1853,12 @@ body {
     margin: 10px;
     width: 180px;
     height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 94px;
   }
 }
 
@@ -2198,6 +2208,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .map {
+    padding-top: 94px;
+  }
   .map-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2211,7 +2224,7 @@ body {
 
 @media (max-width: 576px) {
   .map {
-    padding: 15px 0;
+    padding: 76px 0 15px 0;
   }
   .map__title {
     font-size: 20px;

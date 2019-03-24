@@ -69,7 +69,26 @@ heroExtro.addClass('hero_active');
 })
 // Валидация форм
 $('#order-form').validate({
-
+rules: {
+  user_name: {
+    required: true,
+    minlength: 2,
+    maxlength: 13
+  },
+  
+  user_phone: {
+    required: true,
+  },
+  user_email: {
+    required: true,
+    email: true
+  }
+},
+messages: {
+  user_name: 'Заполните поле',
+  user_phone: 'Заполните поле',
+  user_email: 'Заполните поле'
+}
 });
 // Маска для телефона
 $('.phone').mask('+7 (999) 999-99-99');
