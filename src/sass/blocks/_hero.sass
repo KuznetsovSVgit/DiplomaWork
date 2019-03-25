@@ -24,7 +24,7 @@
     font-size: 13px
     font-weight: 300
     padding-left: 25px
-    margin-bottom: 18px
+    
     outline: none
   &__btn
     width: 203px
@@ -34,6 +34,7 @@
     border-radius: 26.5px
     margin-right: 55px
   &__button 
+    height: 20px
     font-size: 13px
     font-weight: 500
     color: $text-other
@@ -42,14 +43,24 @@
     border-bottom: 1px dashed $text-other
     outline: none
     padding: 0px
+    margin: 16px 0
     &:hover
       cursor: pointer
-      
+  &-form 
+    display: flex
+    flex-wrap: wrap    
   &__extro
     display: none
   &_active
-    display: block
-
+    display: flex
+  &__labelbox
+    display: flex
+    flex-direction: column
+    text-align: center
+    margin-bottom: 18px
+    margin-right: 5px
+  &__btnbox
+    display: flex
 
 @media (max-width: 1200px)
   .hero

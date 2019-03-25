@@ -67,7 +67,7 @@ modalMenu.removeClass('modalMenu_active');
 heroButton.on('click', function(){
 heroExtro.addClass('hero_active');
 })
-// Валидация форм
+// Валидация форм (всех кроме главной)
 $('#order-form').validate({
   
 rules: {
@@ -92,6 +92,32 @@ messages: {
   user_email: 'Заполните поле'
 }
 });
+//Валидация формы hero
+$('#hero-form').validate({
+  
+  rules: {
+    user_name: {
+      name: true,
+      required: true,
+      minlength: 2,
+      maxlength: 13
+    },
+    
+    user_phone: {
+      required: true,
+    },
+    user_email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    user_name: 'Заполните поле',
+    user_phone: 'Заполните поле',
+    user_email: 'Заполните поле'
+  }
+  });
+
 // Маска для телефона
 $('.phone').mask('+7 (999) 999-99-99');
 // Закрытие доп. формы

@@ -10,6 +10,8 @@ $email = $_POST['user_email'];
 $type = $_POST['type_work'];
 $theme = $_POST['work_theme'];
 $discipline = $_POST['discipline'];
+$data = $_POST['date_work'];
+$pages = $_POST['number_pages'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -30,8 +32,8 @@ $mail->addAddress('79102451200@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Тип работы: ' .$type. '<br>Тема работы: ' .$theme. '<br> Предмет работы: ' .$discipline.  '<br>Почта этого пользователя: ' .$email;
+$mail->Subject = 'Заявка с сайта Образовательный центр Умник';
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Тип работы: ' .$type. '<br>Тема работы: ' .$theme. '<br> Предмет работы: ' .$discipline. '<br> Количество страниц: ' .$pages. '<br> Дата выполнения: ' .$data.  '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
