@@ -773,6 +773,11 @@ body {
     height: 50px;
     border-radius: 5px;
     padding: 16px;
+    padding-left: 15px;
+  }
+  .header__btnbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .header__logo {
     margin-left: -200px;
@@ -1114,8 +1119,17 @@ body {
   .hero {
     padding-top: 90px;
   }
+  .hero-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .hero__image {
     display: none;
+  }
+  .hero__btnbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
