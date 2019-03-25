@@ -1,4 +1,6 @@
 .modalMenu
+  
+  margin-top: 76px
   position: fixed
   left: 0
   top: 0
@@ -9,7 +11,7 @@
   &_active
     display: flex
   &-block
-    width: 285px
+    width: 200px
     background: $bgc-nav
     display: flex
     flex-direction: column
@@ -17,3 +19,7 @@
     background: $text-other
     padding: 19px
     text-align: right
+@media (max-width: 576px)
+  .modalMenu
+    margin-top: 61px
+  

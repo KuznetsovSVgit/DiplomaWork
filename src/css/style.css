@@ -363,6 +363,7 @@ body {
   border-radius: 22.5px;
   outline: none;
   border: none;
+  aria-haspopup: true;
 }
 
 .button:hover {
@@ -408,6 +409,10 @@ body {
   opacity: 0.5;
 }
 
+.error {
+  display: inline-block;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 970px;
@@ -420,9 +425,6 @@ body {
 @media (max-width: 992px) {
   .container {
     width: 752px;
-  }
-  .button:hover {
-    display: none !important;
   }
   .input {
     width: 150px;
@@ -639,6 +641,7 @@ body {
   color: #99cc53;
   padding: 9px 17px;
   margin-right: 18px;
+  aria-haspopup: true;
 }
 
 .header__button:hover {
@@ -720,10 +723,6 @@ body {
   .header__button {
     margin-bottom: 5px;
     margin-right: 0px;
-  }
-  .header__button:hover {
-    background: none;
-    color: #99cc53;
   }
 }
 
@@ -1707,6 +1706,7 @@ body {
 }
 
 .modalMenu {
+  margin-top: 76px;
   position: fixed;
   left: 0;
   top: 0;
@@ -1723,7 +1723,7 @@ body {
 }
 
 .modalMenu-block {
-  width: 285px;
+  width: 200px;
   background: #c4e9f3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1738,6 +1738,12 @@ body {
   background: #009ac0;
   padding: 19px;
   text-align: right;
+}
+
+@media (max-width: 576px) {
+  .modalMenu {
+    margin-top: 61px;
+  }
 }
 
 .about-block {
@@ -1821,6 +1827,64 @@ body {
 
 .about__rightArrow:hover {
   height: 80%;
+}
+
+.lb-overlay {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  z-index: 99;
+  text-align: center;
+  background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, #f1d2c2 100%);
+}
+
+.lb-overlay a.lb-close {
+  background: rgba(27, 54, 81, 0.8);
+  z-index: 1001;
+  color: #fff;
+  position: absolute;
+  top: 43px;
+  left: 50%;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  width: 50px;
+  height: 23px;
+  overflow: hidden;
+  margin-left: -25px;
+  opacity: 0;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.lb-overlay img {
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.lb-overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  right: 0px;
+  padding: 80px 100px 120px 100px;
+}
+
+.lb-overlay:target img {
+  opacity: 1;
+}
+
+.lb-overlay:target a.lb-close {
+  opacity: 1;
 }
 
 @media (max-width: 1200px) {

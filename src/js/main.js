@@ -69,8 +69,10 @@ heroExtro.addClass('hero_active');
 })
 // Валидация форм
 $('#order-form').validate({
+  
 rules: {
   user_name: {
+    name: true,
     required: true,
     minlength: 2,
     maxlength: 13
