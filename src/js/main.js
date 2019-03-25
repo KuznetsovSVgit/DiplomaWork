@@ -68,6 +68,30 @@ heroButton.on('click', function(){
 heroExtro.addClass('hero_active');
 })
 // Валидация форм (всех кроме главной)
+$('#order-forms').validate({
+  
+  rules: {
+    user_name: {
+      name: true,
+      required: true,
+      minlength: 2,
+      maxlength: 13
+    },
+    
+    user_phone: {
+      required: true,
+    },
+    user_email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    user_name: 'Заполните поле',
+    user_phone: 'Заполните поле',
+    user_email: 'Заполните поле'
+  }
+  });
 $('#order-form').validate({
   
 rules: {

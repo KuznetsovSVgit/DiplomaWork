@@ -1867,6 +1867,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  z-index: -200;
 }
 
 .about__leftArrow {
@@ -2030,7 +2031,7 @@ body {
 
 .headerLog-block {
   width: 400px;
-  height: 300px;
+  max-height: 500px;
   background: #e6f4f8;
   border: 1px solid #d6ebf2;
   border-radius: 8px;
