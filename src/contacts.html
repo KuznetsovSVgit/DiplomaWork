@@ -103,11 +103,20 @@
         <div class="contacts__inputbox"> <label class="contacts__label" for="input-1">Ваше имя:</label> <input id="input-1" name="user_name" type="text" class="input contacts__input"></div>    
         <div class="contacts__inputbox"> <label class="contacts__label" for="input-2">Эл.почта:</label> <input id="input-2" name="user_email" type="tel" class="input contacts__input"></div> 
         <div class="contacts__inputbox"> <label class="contacts__label" for="input-3">Телефон:</label> <input id="input-3" name="user_phone" type="email" class="input contacts__input phone"></div> 
-        <div class="contacts__inputbox"> <label class="contacts__label" for="input-4">Предмет работы:</label> <input id="input-4" name="type_work" type="text" class="input contacts__input"></div> 
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-4">Предмет работы:</label> <input id="input-4" name="discipline" type="text" class="input contacts__input"></div> 
       </div>
       <div class="rightInput">
-        <div class="contacts__inputbox"> <label class="contacts__label" for="input-5">Тип работы:</label> <input id="input-5" name="type_work" type="text" class="input contacts__input"></div> 
-        <div class="contacts__inputbox"> <label class="contacts__label" for="input-6">Тема работы (вариант<br>или др. данные):</label> <input id="input-6" type="text" class="input contacts__input contacts__input_big"></div> 
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-5">Тип работы:</label> 
+          <select name="type_work" class="input contacts__input" id="" size="1" >
+              <option class="modalOrder__option" selected disabled value="">---</option>
+              <option value="Курсовые работы на заказ">Курсовые работы на заказ</option>
+              <option value="Дипломные работы на заказ">Дипломные работы на заказ</option>
+              <option value="Контрольные работы на заказ">Контрольные работы на заказ</option>
+              <option value="Рефераты на заказ">Рефераты на заказ</option>
+              <option value="Отчеты о практике на заказ">Отчеты о практике на заказ</option>
+            </select>
+        </div> 
+        <div class="contacts__inputbox"> <label class="contacts__label" for="input-6">Тема работы (вариант<br>или др. данные):</label> <input id="input-6" name="work_theme" type="text" class="input contacts__input contacts__input_big"></div> 
       </div>
       <button type="submit" class="button contacts__btn">Отправить</button>
     </form>
@@ -163,7 +172,15 @@
             <input type="text" name="user_name" class="input modalOrder__input" placeholder="Имя*">
             <input type="tel" name="user_phone" class="input modalOrder__input phone" placeholder="Телефон*">
             <input type="email" name="user_email" class="input modalOrder__input" placeholder="E-mail*">
-            <input type="text" name="type_work" class="input modalOrder__input" placeholder="Тип работы*">
+            <select name="type_work" class="input modalOrder__input" id="" size="1" >
+              <option class="modalOrder__option" selected disabled value="">Тип работы*</option>
+              <option value="Курсовые работы на заказ">Курсовые работы на заказ</option>
+              <option value="Дипломные работы на заказ">Дипломные работы на заказ</option>
+              <option value="Контрольные работы на заказ">Контрольные работы на заказ</option>
+              <option value="Рефераты на заказ">Рефераты на заказ</option>
+              <option value="Отчеты о практике на заказ">Отчеты о практике на заказ</option>
+            </select>
+            <!-- <input type="text" name="type_work" class="input modalOrder__input" placeholder="Тип работы*"> -->
             <button type="submit" class="button modalOrder__btn">Отправить</button>
             <button type="button" class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
           </form>

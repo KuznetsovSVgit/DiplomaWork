@@ -8,6 +8,8 @@ $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
 $type = $_POST['type_work'];
+$theme = $_POST['work_theme'];
+$discipline = $_POST['discipline'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -29,7 +31,7 @@ $mail->addAddress('79102451200@yandex.ru');     // Кому будет уход�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Тип работы: ' .$type. '<br>Почта этого пользователя: ' .$email;
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Тип работы: ' .$type. '<br>Тема работы: ' .$theme. '<br> Предмет работы: ' .$discipline.  '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

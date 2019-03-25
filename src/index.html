@@ -72,7 +72,14 @@
         <form action="#" id="hero-form" class="form hero-form">
           <input type="text" name="username" required class="input hero__input" placeholder="Имя*">
           <input type="tel" name="phone" required class="input hero__input" placeholder="E-mail/Телефон*">
-          <input type="text" name="work" required class="input hero__input" placeholder="Тип работы*">
+          <select name="type_work" class="input hero__input" id="" size="1" >
+              <option class="modalOrder__option" selected disabled value="">Тип работы*</option>
+              <option value="Курсовые работы на заказ">Курсовые работы на заказ</option>
+              <option value="Дипломные работы на заказ">Дипломные работы на заказ</option>
+              <option value="Контрольные работы на заказ">Контрольные работы на заказ</option>
+              <option value="Рефераты на заказ">Рефераты на заказ</option>
+              <option value="Отчеты о практике на заказ">Отчеты о практике на заказ</option>
+            </select>
          
            <div class="hero__extro" id="heroExtro">
             <input type="text" class="input hero__input" placeholder="Срок выполнения">

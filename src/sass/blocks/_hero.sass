@@ -44,7 +44,7 @@
     padding: 0px
     &:hover
       cursor: pointer
-      border: none
+      
   &__extro
     display: none
   &_active
@@ -76,9 +76,12 @@
       margin-right: 10px
     &__input
       padding-left: 13px
-    &__button
-      &:hover
-        display: none
+  @media (hover: hover) 
+    .hero
+      &__button
+        &:hover
+          cursor: pointer
+        
 
 @media (max-width: 768px)
   .hero

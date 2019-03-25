@@ -178,7 +178,15 @@
             <input type="text" name="user_name" class="input modalOrder__input" placeholder="Имя*">
             <input type="tel" name="user_phone" class="input modalOrder__input phone" placeholder="Телефон*">
             <input type="email" name="user_email" class="input modalOrder__input" placeholder="E-mail*">
-            <input type="text" name="type_work" class="input modalOrder__input" placeholder="Тип работы*">
+            <select name="type_work" class="input modalOrder__input" id="" size="1" >
+              <option class="modalOrder__option" selected disabled value="">Тип работы*</option>
+              <option value="Курсовые работы на заказ">Курсовые работы на заказ</option>
+              <option value="Дипломные работы на заказ">Дипломные работы на заказ</option>
+              <option value="Контрольные работы на заказ">Контрольные работы на заказ</option>
+              <option value="Рефераты на заказ">Рефераты на заказ</option>
+              <option value="Отчеты о практике на заказ">Отчеты о практике на заказ</option>
+            </select>
+            <!-- <input type="text" name="type_work" class="input modalOrder__input" placeholder="Тип работы*"> -->
             <button type="submit" class="button modalOrder__btn">Отправить</button>
             <button type="button" class="button modalOrder__btn" id="modalOrderClose">Отмена</button>
           </form>

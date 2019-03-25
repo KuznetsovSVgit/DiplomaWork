@@ -49,7 +49,10 @@ body
   opacity: 0.5
 .error
   display: inline-block
-
+.thank
+  text-align: center
+  &Btn
+  margin: auto
 @media (max-width: 1200px)
   .container
     width: 970px
@@ -59,13 +62,13 @@ body
 @media (max-width: 992px)
   .container
     width: 752px
-  .button
-    &:hover
-     
-      
+  
   .input
     width: 150px
- 
+@media (hover: none) 
+  .button
+    &:hover  
+      cursor: pointer
      
     
 

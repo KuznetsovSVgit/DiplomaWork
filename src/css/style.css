@@ -413,6 +413,11 @@ body {
   display: inline-block;
 }
 
+.thank {
+  text-align: center;
+  margin: auto;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 970px;
@@ -428,6 +433,12 @@ body {
   }
   .input {
     width: 150px;
+  }
+}
+
+@media (hover: none) {
+  .button:hover {
+    cursor: pointer;
   }
 }
 
@@ -1020,7 +1031,6 @@ body {
 
 .hero__button:hover {
   cursor: pointer;
-  border: none;
 }
 
 .hero__extro {
@@ -1062,8 +1072,11 @@ body {
   .hero__input {
     padding-left: 13px;
   }
+}
+
+@media (max-width: 992px) and (hover: hover) {
   .hero__button:hover {
-    display: none;
+    cursor: pointer;
   }
 }
 
@@ -1260,11 +1273,12 @@ body {
     display: flex;
     position: absolute;
     top: 42%;
+    left: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0 6px;
-    width: 56.5%;
+    padding: 0 60px;
+    width: 100%;
   }
   .info__btn {
     margin-top: 10px;
@@ -1430,13 +1444,12 @@ body {
     margin: 0px;
   }
   .recall__card {
-    width: 280px;
     max-height: 240px;
-    margin: 0 auto;
     text-align: center;
+    margin-left: 10px;
   }
   .recall__card:after {
-    left: 45%;
+    left: 42%;
     top: -12px;
   }
   .recall__image {
@@ -1451,12 +1464,11 @@ body {
     display: flex;
     position: absolute;
     top: 20%;
-    left: 30.5%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    left: 0%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0 20px;
-    width: 200px;
+    width: 100%;
   }
 }
 
