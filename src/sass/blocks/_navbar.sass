@@ -29,6 +29,8 @@
     &:hover
       color: $text-other
       background: $btn-nav
+  &__br
+    position: relative
 .menu
   &__link
     &:hover+ .menu__works
@@ -60,11 +62,11 @@
 
     &s
       position: absolute
-      background: $btn-nav
+      background: #dcf2f8
       display: none
-      bottom: -325px
-      left: 52%
-      max-width: 409px
+      bottom: -324px
+      left: 0
+      width: 415px
       &:hover
         display: block
 @media (max-width: 1200px)
@@ -79,9 +81,9 @@
   .navbar
     &__link
       height: 50px
-      font-size: 9px
-      font-weight: 300
-      padding: 20px 25px
+      font-size: 11px
+      font-weight: 400
+      padding: 20px 18px
       &:before
         height: 28px
   .menu
@@ -97,7 +99,7 @@
           width: 240px
       &s
         bottom: -250px
-        left: 52.8%
+        left: 0
         max-width: 266px
 
 @media (max-width: 768px)

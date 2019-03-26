@@ -47,14 +47,17 @@
       <a class="navbar__link" href="about.html">О КОМПАНИИ</a>
       <a class="navbar__link" href="#">КЛИЕНТАМ</a>
       <a class="navbar__link" href="#">НАШИ ЦЕНЫ</a>
-      <a class="navbar__link menu__link" href="#">МЫ ВЫПОЛНЯЕМ</a>
-      <div class="menu__works">
-        <a href="#" id="modalOrderBtn-2" class="menu__work">Курсовые работы на заказ</a>
-        <a href="#" id="modalOrderBtn-3" class="menu__work">дипломные работы на заказ</a>
-        <a href="#" id="modalOrderBtn-4" class="menu__work">контрольные работы на заказ</a>
-        <a href="#" id="modalOrderBtn-5" class="menu__work">рефераты на заказ</a>
-        <a href="#" id="modalOrderBtn-6" class="menu__work">отчеты о практике на заказ</a>
-      </div>
+      <div class="navbar__br">
+        <a class="navbar__link menu__link" href="#">МЫ ВЫПОЛНЯЕМ</a>
+        <div class="menu__works">
+            <a href="#" id="modalOrderBtn-2" class="menu__work">Курсовые работы на заказ</a>
+            <a href="#" id="modalOrderBtn-3" class="menu__work">дипломные работы на заказ</a>
+            <a href="#" id="modalOrderBtn-4" class="menu__work">контрольные работы на заказ</a>
+            <a href="#" id="modalOrderBtn-5" class="menu__work">рефераты на заказ</a>
+            <a href="#" id="modalOrderBtn-6" class="menu__work">отчеты о практике на заказ</a>
+          </div>
+      </div> 
+      
       <a class="navbar__link" href="#">ГОТОВЫЕ РАБОТЫ</a>
       <a class="navbar__link" href="contacts.html">КОНТАКТЫ</a>
     </div>
@@ -72,7 +75,7 @@
         <form action="mail.php" method="POST" id="hero-form" class="form hero-form">
           <div class="hero__labelbox"> <input type="text" name="user_name" required class="input hero__input" placeholder="Имя*"> </div> 
           <div class="hero__labelbox"> <input type="tel" name="user_phone" required class="input hero__input" placeholder="E-mail/Телефон*"> </div> 
-          <select name="type_work" class="input hero__input" size="1" >
+          <select name="type_work" class="input select hero__input" size="1" >
               <option class="modalOrder__option" selected disabled value="">Тип работы*</option>
               <option value="Курсовые работы на заказ">Курсовые работы на заказ</option>
               <option value="Дипломные работы на заказ">Дипломные работы на заказ</option>

@@ -35,10 +35,20 @@
     &__list
       flex-direction: column
       justify-content: center
-      align-items: center
+      // align-items: center
+      padding-left: 190px
+
+@media (max-width: 768px)
+  .works
+    &__list
+      padding-left: 90px
+
 @media (max-width: 576px)
   .works
     &__title
       font-size: 18px
     &__text
       font-size: 14px
+    &__list
+      
+      align-items: center

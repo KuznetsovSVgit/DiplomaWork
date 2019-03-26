@@ -762,18 +762,21 @@ body {
             flex-direction: row;
   }
   .header__button {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
     margin-bottom: 0;
-    padding: 16px;
+    padding: 5.5px;
+  }
+  .header__button:hover {
+    background: none;
   }
   .header__btn {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
-    padding: 16px;
-    padding-left: 15px;
+    padding: 5.5px;
+    padding-left: 4px;
   }
   .header__btnbox {
     -ms-flex-wrap: wrap;
@@ -872,6 +875,10 @@ body {
   background: #dcf2f8;
 }
 
+.navbar__br {
+  position: relative;
+}
+
 .menu__link:hover + .menu__works {
   display: block;
 }
@@ -905,9 +912,9 @@ body {
   position: absolute;
   background: #dcf2f8;
   display: none;
-  bottom: -325px;
-  left: 52%;
-  max-width: 409px;
+  bottom: -324px;
+  left: 0;
+  width: 415px;
 }
 
 .menu__works:hover {
@@ -926,9 +933,9 @@ body {
 @media (max-width: 992px) {
   .navbar__link {
     height: 50px;
-    font-size: 9px;
-    font-weight: 300;
-    padding: 20px 25px;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 20px 18px;
   }
   .navbar__link:before {
     height: 28px;
@@ -946,7 +953,7 @@ body {
   }
   .menu__works {
     bottom: -250px;
-    left: 52.8%;
+    left: 0;
     max-width: 266px;
   }
 }
@@ -1594,9 +1601,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding-left: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .works__list {
+    padding-left: 90px;
   }
 }
 
@@ -1606,6 +1617,11 @@ body {
   }
   .works__text {
     font-size: 14px;
+  }
+  .works__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2050,6 +2066,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 999999;
 }
 
 .headerLog_active {
@@ -2346,6 +2363,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/hero/arrow-down.png") 96%/5% no-repeat #ffffff;
 }
 
 @media (max-width: 1200px) {
