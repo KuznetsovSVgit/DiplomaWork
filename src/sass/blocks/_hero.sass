@@ -92,19 +92,18 @@
       &__button
         &:hover
           cursor: pointer
-        
 
 @media (max-width: 768px)
   .hero
     padding-top: 90px
-    &-form
-      justify-content: center
+    
     &__image
       display: none
     &__btn
       &box
         flex-wrap: wrap
-
+    &__extro
+ 
 @media (max-width: 576px)
   .hero
     background-size: cover
@@ -131,3 +130,10 @@
       height: 47px
       border-radius: 23.5px
       margin: 11px auto 20px auto
+    &-form
+      flex-direction: column
+      align-items: center
+    &__extro
+      margin-top: 15px
+      flex-direction: column
+      align-items: center
