@@ -1840,8 +1840,8 @@ body {
 .about__item {
   outline: none;
   position: relative;
-  width: 204px;
-  height: 274px;
+  width: 190px;
+  height: 250px;
   border: 1px solid #cce4ea;
   border-radius: 8px;
   margin: 13px;
@@ -1867,23 +1867,17 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  z-index: -200;
+  z-index: 999;
 }
 
 .about__leftArrow {
   cursor: pointer;
-}
-
-.about__leftArrow:hover {
-  height: 80%;
+  position: absolute;
 }
 
 .about__rightArrow {
+  position: absolute;
   cursor: pointer;
-}
-
-.about__rightArrow:hover {
-  height: 80%;
 }
 
 .lb-overlay {
@@ -1974,8 +1968,6 @@ body {
   }
   .about__item {
     margin: 10px;
-    width: 180px;
-    height: 250px;
   }
 }
 
@@ -2334,6 +2326,9 @@ body {
   }
   .leftInput {
     margin-right: 0px;
+  }
+  .google {
+    width: 100%;
   }
 }
 
